@@ -12,5 +12,8 @@ const path = require("node:path");
 // console.log(path.parse(__filename));
 // console.log(path.parse(__dirname));
 
-console.log(path.format(path.parse(__filename)));
-console.log(path.format(path.parse(__dirname)));
+// console.log(path.format(path.parse(__filename)));
+// console.log(path.format(path.parse(__dirname)));
+
+console.log(path.isAbsolute(__filename));
+console.log(path.isAbsolute(__dirname));
