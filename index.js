@@ -19,7 +19,12 @@ const path = require("node:path");
 // console.log(path.isAbsolute(__dirname));
 // console.log(path.isAbsolute("./data.js"));
 
-console.log(path.join("folder1", "folder2", "index.html"));
-console.log(path.join("/folder1", "folder2", "index.html"));
-console.log(path.join("/folder1", "folder2", "../index.html"));
-console.log(path.join(__dirname, "data.json"));
+// console.log(path.join("folder1", "folder2", "index.html"));
+// console.log(path.join("/folder1", "folder2", "index.html"));
+// console.log(path.join("/folder1", "folder2", "../index.html"));
+// console.log(path.join(__dirname, "data.json"));
+
+console.log(path.resolve("folder1", "folder2", "index.html"));
+console.log(path.resolve("/folder1", "folder2", "index.html"));
+console.log(path.resolve("/folder1", "folder2", "../index.html"));
+console.log(path.resolve(__dirname, "data.json"));
