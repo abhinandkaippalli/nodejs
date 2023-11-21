@@ -17,3 +17,4 @@ const path = require("node:path");
 
 console.log(path.isAbsolute(__filename));
 console.log(path.isAbsolute(__dirname));
+console.log(path.isAbsolute("./data.js"));
