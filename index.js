@@ -14,3 +14,9 @@ let numbers = [1, 2, 4, 8, 5, 3, 7, 6];
 console.log(numbers.sort((a, b) => a - b));
 console.log(numbers.filter((n) => n % 2 === 0));
 console.log(numbers.map((n) => n / 2));
+
+//asynchronous function
+function callback() {
+  document.getElementById("demo").innerHTML = "HelloWorld";
+}
+document.getElementById("btn").addEventListener("click", callback);
