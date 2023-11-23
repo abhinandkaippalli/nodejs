@@ -13,10 +13,10 @@ fs.readFile("./file.txt", (error, data) => {
 
 fs.writeFileSync("./greet.txt", "Hello world!");
 
-fs.writeFile("./greet.txt", "Hello vishwas", (err) => {
-  if(err) {
+fs.writeFile("./greet.txt", " Hello vishwas", { flag: "a" }, (err) => {
+  if (err) {
     console.log(err);
   } else {
     console.log("File Written");
   }
-})
+});
