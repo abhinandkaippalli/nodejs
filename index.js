@@ -8,7 +8,7 @@ const readableStream = fs.createReadStream("./file.txt", {
   highWaterMark: 2, //data in chunks of 2 bytes
 });
 
-readableStream.pipe(gzip).pipe(fs.WriteStream("./file.txt.gz"))
+readableStream.pipe(gzip).pipe(fs.WriteStream("./file.txt.gz"));
 
 const writeableStream = fs.createWriteStream("./file2.txt");
 
